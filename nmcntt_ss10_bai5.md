@@ -395,3 +395,12 @@ Mẫu tài liệu, cần xác minh theo hệ thống thực tế
 ----------
 
 _Tài liệu này là mẫu bàn giao kỹ thuật. Trước khi sử dụng chính thức, cần cập nhật thông số phần cứng, sơ đồ đấu nối, lệnh cài đặt, ngưỡng tưới và kết quả kiểm thử theo sản phẩm thực tế._
+
+## Lưu ý: Xử lý khi RAM bị đầy dữ liệu nhật ký
+
+- Không tiếp tục ghi nhật ký khi RAM gần đầy để tránh tràn bộ nhớ và làm treo hệ thống.
+- Xóa nhật ký cũ không cần thiết hoặc chuyển dữ liệu sang bộ nhớ lưu trữ lâu dài.
+- Ưu tiên giữ lại nhật ký quan trọng như lỗi cảm biến, trạng thái máy bơm và cảnh báo an toàn.
+- Kiểm tra dung lượng RAM định kỳ và phát cảnh báo khi vượt ngưỡng cho phép.
+- Không tự ý tắt hoặc khởi động lại hệ thống tưới khi chưa đảm bảo an toàn.
+- Khi phát hiện lỗi bộ nhớ, hệ thống cần chuyển sang trạng thái an toàn, ngăn tưới ngoài kiểm soát và thông báo cho người vận hành.
